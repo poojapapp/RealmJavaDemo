@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:weightSum="2"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+        android:id="@+id/linear_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/text_productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Name"
+            android:maxLines="1"></EditText>
+        <EditText
+            android:id="@+id/text_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Desciption"
+            android:maxLines="1"></EditText>
+        <EditText
+            android:id="@+id/text_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Category"
+            android:maxLines="1"></EditText>
+        <EditText
+            android:id="@+id/text_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:maxLines="1"></EditText>
+        <EditText
+            android:id="@+id/text_marketPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Market Price"
+            android:maxLines="1"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_editText"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD" />
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPDATE" ></Button>
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE" />
+
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/spinner_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linear_btn"></Spinner>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_below="@+id/spinner_language">
+        <TextView
+        android:id="@+id/textViewEmployees"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Result:"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+   </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
